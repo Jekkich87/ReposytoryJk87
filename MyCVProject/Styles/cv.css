@@ -13,34 +13,56 @@ html
 
                         ---------------------------------*/
 
+
 #header{
-    height: 100px;
+    width:100%;
+    height: 120px;
     display:flex;
-    justify-content: center;
-    align-content: center;
-   
+    justify-content: right;
 }
 
 .ulnav{
-    width: 1200px;
+    width: 600px;
     height:90px;
     display:flex;
     align-content: center;
-    justify-content: center;
-    margin-top: 30px;
+    justify-content: right;
+    margin-top: 10px;
     }
 .ulnav .navli{
+    width:150px;
     display: flex;
     float: right;
-    width: 200px;
     height: 50px;
-    /*border: 1px solid;
-    border-radius: 50%;*/
-    align-content: center;
+    /*border: 3px solid;
+    border-radius: 10%;*/
+    border-color: white;
+    padding-top: 15px;
     justify-content: center;
     margin-right: 10px;
+    /*color: blue;*/
+    font-family: Merriweather, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    /*background-color: aqua;*/
     }
 
+    .navli .navlink{
+        color: black;
+        text-decoration-line: none;
+        }
+        .navli /*.navlink*/ :hover{
+        color: red;
+        transition: 0.5s ease-out;
+    }
+
+/*#main{
+    display: flex;
+    width:85%;
+    height: 100vh;
+    
+
+}*/
 
 
 #firstP{
@@ -49,8 +71,7 @@ html
     background-position: center;
     background-size: cover;
     color:white;
-    height: auto;
     align-content: center;
-    height: 100vh;
-    margin-top: -100px;
+    height: 500px;
+    /*margin-top: -100px;*/
 }
