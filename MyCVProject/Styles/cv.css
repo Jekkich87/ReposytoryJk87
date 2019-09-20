@@ -1,0 +1,26 @@
+html 
+    {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+/* ------------------------------
+
+
+                                        HEADER 
+
+
+                        ---------------------------------*/
+
+#header{
+    background-image: url(/MyCVProject/IMG/CVheader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    height: auto;
+    display: grid; 
+    align-content: center;
+    height: 100vh;
+}
