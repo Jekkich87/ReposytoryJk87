@@ -24,25 +24,26 @@ html {
 }
 
 #header {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     width: 100%;
     /*height: 50px;*/
-    display: block;
+    display: flex;
     align-items: center;
-    justify-items: right;
+    justify-content: right;
     margin-top: 15px;
     background-color: #444444;
     /*margin-bottom: -20px;*/
 }
+
 
 .ulnav {
     width: 600px;
     height: 90px;
     display: flex;
     align-content: center;
-    justify-content: right;
+    justify-items: right;
     margin-top: 15px;
-    margin-left: 60%;
+    /*margin-left: 60%;*/
 }
 
 .ulnav .navli {
@@ -255,4 +256,15 @@ html {
     align-content: center;
     /*background-color: rgba(16, 230, 183, 0.562);*/
     padding-top: 16px;
+}
+
+@media(max-width:1000px) {
+#body{
+    display:grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 100vh);
+    background-color: #444444;
+}
+
 }
