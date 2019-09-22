@@ -89,17 +89,42 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
     color: white;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     height: 100vh;
+    display: flex;
     /* width: 100%;*/
-    margin-bottom: 0%;
+    /*margin-bottom: 0%;*/
+}
+
+.name {
+    /*font-size: 45px;*/
+    margin-left: 20px;
+}
+
+.name .aboutme {
+    font-size: 40px;
+    color: white;
+    text-decoration-line: none;
+    /*margin-left: 20px;*/
+}
+
+.aboutme:hover {
+    text-decoration-line: underline;
+    color: coral;
+    transition: 1s ease-out;
 }
 
 #firstP .myfoto {
     float: right;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    font-size: 40px;
+    color: white;
+    text-decoration-line: none;
+    margin-left: 20px
 }
 
 #secondP {
@@ -111,11 +136,11 @@ html {
     color: white;
     justify-content: center;
     height: 100vh;
-    /*width: 100%;*/
     display: flex;
     align-items: center;
     justify-items: center;
     /*margin-bottom: 0%;*/
+    /*width: 100%;*/
 }
 
 
@@ -128,20 +153,6 @@ html {
     align-items: center;
     justify-items: center;
 }*/
-
-
-/*.wrap */
-
-.name {
-    font-size: 45px;
-}
-
-
-/*.wrap*/
-
-.shortme {
-    font-size: 35px;
-}
 
 .myCV {
     font-size: 40px;
@@ -158,8 +169,8 @@ html {
 
 #secondP .myfoto {
     float: right;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 #thirdP {
@@ -170,8 +181,34 @@ html {
     color: white;
     justify-content: center;
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     /*width: 100%;*/
-    margin-bottom: 0%;
+    /*margin-bottom: 0%;*/
+}
+
+#thirdP .mygallery {
+    float: right;
+    width: 250px;
+    height: 250px;
+}
+
+.myworks {
+    margin-left: 20px;
+}
+
+.gallery {
+    font-size: 40px;
+    color: white;
+    text-decoration-line: none;
+    margin-left: 20px
+}
+
+.gallery:hover {
+    text-decoration-line: underline;
+    color: coral;
+    transition: 1s ease-out;
 }
 
 #forthP {
@@ -182,8 +219,34 @@ html {
     color: white;
     justify-content: center;
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     /*width: 100%;*/
-    margin-bottom: 0%;
+    /*margin-bottom: 0%;*/
+}
+
+#forthP .mycontacts {
+    float: right;
+    width: 250px;
+    height: 250px;
+}
+
+.contacts {
+    margin-left: 20px;
+}
+
+.contactme {
+    font-size: 40px;
+    color: white;
+    text-decoration-line: none;
+    /*margin-left: 20px*/
+}
+
+.contactme:hover {
+    text-decoration-line: underline;
+    color: coral;
+    transition: 1s ease-out;
 }
 
 #footer {
