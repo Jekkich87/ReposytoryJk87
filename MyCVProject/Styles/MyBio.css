@@ -1,7 +1,8 @@
 html {
     font-family: "PT Sans Caption", sans-serif;
     font-size: 16px;
-    background-color: #444444;
+    /*background-color: #444444;*/
+    background-image: url(../IMG/aboutmecover.jpg);
     /*line-height: 1.5;*/
     /*margin-top: -15px;*/
     /*height: 100vh;*/
@@ -15,8 +16,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-top: 15px;
-    background-color: #444444;
+    /*margin-top: 15px;*/
+    /*background-color: #444444;*/
     /*margin-bottom: -20px;*/
 }
 
@@ -27,7 +28,7 @@ html {
     display: flex;
     align-content: center;
     justify-items: right;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     /*margin-left: 60%;*/
 }
 
@@ -60,8 +61,50 @@ html {
 
 #footer {
     width: 100%;
-    height: 10vh;
-    align-content: center;
+    height: 5vh;
+    align-items: center;
+    justify-items: center;
     /*background-color: rgba(16, 230, 183, 0.562);*/
-    padding-top: 16px;
+    /*padding-top: 16px;*/
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1,100vh);
+    /*background-image: url(../IMG/aboutmecover.jpg);*/
+    grid-gap:5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.myfoto{
+    width:99%;
+    height:80vh;
+    
+    }
+
+.mybio{
+    width:99%;
+    height:80vh;
+    justify-content: center;
+    align-content: center;
+    background-color: aqua;
+    
+    }
+
+    .text {align-content:justify;}
+
+@media (max-width:1000px){
+#main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 100vh);
+    justify-items: center;
+}
+.myfoto{
+    max-width:100%;
+    height:100vh;
+    }
+
 }
