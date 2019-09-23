@@ -1,0 +1,22 @@
+.progress{
+    /*border: 1px solid #333; /* Рамка */
+    height: 20px; /* Высота */
+    border-radius: 10px; /* Радиус скругления */
+    width: 300px;
+    
+}
+
+.progress::before{
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    height: 19px; width: 250px;
+    background: #5bc1fe; /* Для старых браузеров */
+    background: -moz-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd); /* Fx 3.6+ */
+    background: -webkit-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd); /* Chrome 10+,Safari 5.1+ */
+    background: -o-linear-gradient(top, #5bc1fe,#018ef2 50%,#57befd); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd); /* IE10+ */
+    background: linear-gradient(to bottom, #5bc1fe,#018ef2 50%, #57befd); /* W3C */
+    /*border: 1px solid #008DF2; /* Рамка */
+    box-shadow: 3px 0 3px rgba(0,0,0,0.5); /* Тень справа */
+    border-radius: 10px
+   }
