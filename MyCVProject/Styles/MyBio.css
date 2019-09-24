@@ -78,11 +78,21 @@ html {
     justify-content: center;
 }
 
-.myfoto{
+/*.foto{
     width:99%;
     height:80vh;
+    align-items: center;
+    justify-content: center;
     
-    }
+    }*/
+ .myfoto{
+    width: 600px;
+    height:600px;
+    margin-left: 5px;
+}
+
+
+
 
 .mybio{
     width:99%;
@@ -93,18 +103,54 @@ html {
     
     }
 
-    .text {align-content:justify;}
+    .text {align-content:center;
+    justify-content: justify;}
 
-@media (max-width:1000px){
+@media (min-width: 550px) and (max-width:1230px){
 #main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2 100vh);
+    grid-template-rows: repeat(2 50vh);
     justify-items: center;
+    align-items: center;
 }
-.myfoto{
-    max-width:100%;
+.foto{
+    width:auto;
     height:100vh;
+    align-items: center;
+    justify-content:center;
+}
+
+.foto .myfoto{
+    width:450px;
+    height:450px;
+    }
+
+
+.text{
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+}
+}
+
+@media (min-width:360px) and (max-width:549px){
+
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .myfoto{
+        width:300px;
+        height:300px;
+        }
+    .text{
+        word-wrap: break-word;
+        width: auto;
+        height: auto;
     }
 
 }
