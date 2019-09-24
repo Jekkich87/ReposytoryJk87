@@ -1,15 +1,138 @@
+html {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    /*background-color: #444444;*/  /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*line-height: 1.5;*/
+    /*margin-top: -15px;*/
+    /*height: 100vh;*/
+    /*justify-content: center;*/
+}
+
+#body {
+    width: 100%;
+    /*display: grid;
+    grid-template-rows: repeat(3)*/
+}
+
+#header {
+    /*margin-top: 10px;*/
+    width: 100%;
+    /*height: 50px;*/
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 15px;
+    background-color: #444444;
+    /*margin-bottom: -20px;*/
+}
+
+
+.ulnav {
+    width: 600px;
+    height: 90px;
+    display: flex;
+    align-content: center;
+    justify-items: right;
+    margin-top: 15px;
+    /*margin-left: 60%;*/
+}
+
+.ulnav .navli {
+    width: 150px;
+    display: flex;
+    float: right;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 50px;
+    border-color: white;
+    padding-top: 15px;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family: Merriweather, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.navli .navlink {
+    color: rgb(255, 251, 251);
+    text-decoration-line: none;
+}
+
+.navlink:hover {
+    color: red;
+    transition: 0.5s ease-out;
+}
+
+#footer {
+    width: 100%;
+    height: 5vh;
+    align-content: center;
+    /*background-color: rgba(16, 230, 183, 0.562);*/
+    /*padding-top: 16px;*/
+}
+
+
+#main{
+    max-width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+#infoblock{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    background-color: crimson;
+}
+
+
+
+.foto{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+.wrap{
+    background-color: aquamarine;
+    
+        /*overflow: auto;
+        width: 200px;
+        max-height: 200px;
+        margin: 30px auto;
+        background:
+         linear-gradient(white 30%, rgba(255,255,255,0)),
+         linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+         radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
+         radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+        background-attachment: local, local, scroll, scroll;*/
+       
+
+}
+
+
+
+
 .progress{
-    /*border: 1px solid #333; /* Рамка */
-    height: 20px; /* Высота */
+    border: 1px solid #333; /* Рамка */
+    height: 10px; /* Высота */
     border-radius: 10px; /* Радиус скругления */
-    width: 300px;
+    width: 100px;
     
 }
 
 .progress::before{
     content: '';
+    /*font-size: 9px;*/
     position: absolute; /* Абсолютное позиционирование */
-    height: 19px; width: 250px;
+    height: 10px; 
+    width: 70px;
     background: #5bc1fe; /* Для старых браузеров */
     background: -moz-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd); /* Fx 3.6+ */
     background: -webkit-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd); /* Chrome 10+,Safari 5.1+ */
