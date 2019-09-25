@@ -94,6 +94,8 @@ html {
 
 .wrap {
     background-color: aquamarine;
+    align-content: center;
+    justify-content: center;
     /*overflow: auto;
         width: 200px;
         max-height: 200px;
@@ -108,49 +110,62 @@ html {
         background-attachment: local, local, scroll, scroll;*/
 }
 
-.ul .li {
+ul .li {
     list-style-type: none;
-    /*margin-left: 5px;*/
+    margin-left: 5px;
+    align-content: baseline;
+    justify-content: center;
 }
 
 .icon {
-    padding-right: -2px;
+    margin-top: 2px;
     width: 16px;
     height: 16px;
     margin-right: 5px;
+    /*align-items: center;
+    justify-items: center;*/
 }
 
-.progress {
-    border: 1px solid #333;
-    /* Рамка */
-    height: 10px;
-    /* Высота */
-    border-radius: 10px;
-    /* Радиус скругления */
-    width: 100px;
+
+
+#resume{
+    width:80%;
+    height:100vh;
+    justify-self: center;
 }
 
-.progress::before {
-    content: '';
-    /*font-size: 9px;*/
-    position: absolute;
-    /* Абсолютное позиционирование */
+
+.name{
+    text-transform: capitalize
+}
+    
+
+.article{
+    display:grid;
+    grid-template-columns: 150px 100px 40px;
+    height:20px;
+    background-color: red;
+    margin-top: 5px;
+    align-content: center;
+    width: 350px;
+}
+
+.article .text {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.cyf {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.meter{
     height: 10px;
-    width: 70px;
-    background: #5bc1fe;
-    /* Для старых браузеров */
-    background: -moz-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd);
-    /* Fx 3.6+ */
-    background: -webkit-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd);
-    /* Chrome 10+,Safari 5.1+ */
-    background: -o-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #5bc1fe, #018ef2 50%, #57befd);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #5bc1fe, #018ef2 50%, #57befd);
-    /* W3C */
-    /*border: 1px solid #008DF2; /* Рамка */
-    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.5);
-    /* Тень справа */
-    border-radius: 10px
+    /*border-radius: 50px;*/
+    align-self: center;
+    margin-left: 10px;
 }
