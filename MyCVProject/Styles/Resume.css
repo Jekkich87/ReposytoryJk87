@@ -70,7 +70,7 @@ html {
     width: 100%;
     height: 5vh;
     align-content: center;
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     /*background-color: rgba(16, 230, 183, 0.562);*/
     /*padding-top: 16px;*/
     /*position: absolute;*/
@@ -84,11 +84,16 @@ html {
     /*height: 100%;*/
 }
 
+
+
 #infoblock {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    background-color: crimson;
+    grid-template-rows: repeat(4, 170px);
+    /*height: 900px;*/
+    /*background-color: crimson;*/
+    /*margin-bottom: 20px;*/
+    /*position: relative;*/
     /*align-content: flex-start;*/
     /*min-height: 100px;*/
     /*overflow: auto;*/
@@ -100,13 +105,19 @@ html {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 .wrap {
-    background-color: aquamarine;
+    margin-top: 40px;
     align-content: center;
     justify-content: center;
     align-content: flex-start;
+    height: 170px;
+    /*background-color: aquamarine;*/
+    /*height:200px;*/
+    /*margin-bottom: -210px;*/
     /*overflow: auto;
         width: 200px;
         max-height: 200px;
@@ -142,28 +153,25 @@ ul .li {
 #resume{
     width:90%;
     /*height:100%;*/
-    justify-self: center;
-
+    /*justify-self: center;*/
+    margin-left:20px;
 }
-
 
 .name{
     text-transform: capitalize
 }
-    
 
-.article{
+.personal{
     display:grid;
     grid-template-columns: 150px 100px 40px;
     height:20px;
-    background-color: red;
     margin-top: 5px;
     align-content: center;
-    width: 350px;
-    
+    width: 310px;
+    /*background-color: red;*/
 }
 
-.article .text {
+.personal .text {
     font-family: "PT Sans Caption", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
@@ -189,6 +197,43 @@ ul .li {
     /*overflow: scroll;*/
     width: 100%;
     /*height: 100%;*/
-       background-color: blue;
+    /*background-color: blue;*/
 }
 
+.jobdescr{
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: 1;
+    grid-column-gap: 20px;
+    }
+
+.skills{
+display: grid;
+grid-template-columns: repeat(2, 300px);
+grid-template-rows:  repeat(2, 30px);
+grid-column-gap: 25px; 
+}
+
+.edudesc{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: baseline;
+    grid-column-gap: 20px;
+}
+
+.article{
+    display:grid;
+    grid-template-columns: 150px 100px 40px;
+    height:20px;
+    margin-top: 5px;
+    align-content: center;
+    width: 310px;
+    /*background-color: red;*/
+}
+
+.article .text {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
