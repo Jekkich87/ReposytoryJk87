@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Палівець Євген</title>
-    <link rel="icon" type="image/ico" href="./IMG/favicon.ico">
+    <link rel="icon" type="image/ico" href="../MyCVProject/IMG/Logos/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="../MyCVProject/Styles/Main.css">
 </head>
@@ -15,20 +15,20 @@
 
     <header class="header">
         <nav class="nav">
-            <a href="CVMain.html" class="navlink" target="_self">Головна</a>
-            <a href="Aboutme.html" class="navlink" target="_self">Про мене</a>
-            <a href="#" class="navlink" target="_blank">Контакти</a>
+            <a class="navlink">Головна</a>
+            <a class="navlink" href="#aboutme">Про мене</a>
+            <a class="navlink" href="#contactme">Контакти</a>
         </nav>
         <!--<ul class="ulnav"></ul>-->
     </header>
 
     <main class="main">
         <section class="head">
-            <img src="" alt="" class="foto">
-            <h1>Палівець Євген Андрійович</h1>
+            <img src="../MyCVProject/IMG/Myphoto.jpg" alt="" class="foto">
+            <h1>Палівець<br> Євген<br> Андрійович</h1>
         </section>
 
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
             <h1 class="amh1">Портфоліо</h1>
 
             <article class="article">
@@ -49,48 +49,15 @@
             </article>
         </section>
 
-        <section class="contacts">
-            <h1 class="headh1">Зв’яжіться зі мною</h1>
-
-            <article class="contactme">
-                <div class="div">
-                    <ul class="ul1">
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Git</a></li>
-                        <li><a href="">Telegram</a></li>
-                        <li><a href="">WhatsApp</a></li>
-                        <li><a href="">Viber</a></li>
-                    </ul>
-                </div>
-
-                <div class="div">
-                    <ul class="ul2">
-                        <li>+38-067-407-55-07</li>
-                        <li>+38-093-145-75-35</li>
-                        <li>+38-050-140-78-98</li>
-                        <li>eugene87@ukr.net</li>
-                    </ul>
-                </div>
-
-                <div class="div">
-                    <form class="faform">
-                        <fieldset>
-                            <legend>Контактная информация</legend>
-                            <p><input type="text" id="name" placeholder="Имя"></a>
-                            </p>
-                            <p><input type="email" id="email" placeholder="Email"></p>
-                            <textarea name="message"></textarea>
-                            <p><input type="submit" value="Отправить" class="Send"></p>
-                        </fieldset>
-                    </form>
-                </div>
-            </article>
+        <section class="contacts" id="contactme">
+            <img src="../MyCVProject/IMG/Logos/ContactMeLogo.jpg" alt="" class="img">
+            <a href="./Contacts.html" target="_blank">Зв’яжіться зі мною</a>
         </section>
 
     </main>
 
     <footer class="footer">
-        <p>all right reserved</p>
+        <p>Made by me</p>
     </footer>
 
 </body>
