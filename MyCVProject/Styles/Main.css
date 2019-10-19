@@ -1,6 +1,7 @@
 html {
     font-family: "PT Sans Caption", sans-serif;
     font-size: 16px;
+    
     /*background-color: #444444;*/
     /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     /*line-height: 1.5;*/
@@ -10,7 +11,8 @@ html {
 }
 
 .body {
-    width: 100vw;
+    width: 100%;
+    
 }
 
 .header {
@@ -27,7 +29,7 @@ html {
     grid-template-columns: repeat(3, 180px);
     grid-column-gap: 5px;
     width: 550px;
-    height: 100px;
+    height: 12vh;
     align-items: center;
 }
 
@@ -37,7 +39,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 50px;
     width: 150px;
     border: 3px solid white;
     border-radius: 50px;
@@ -53,38 +55,37 @@ html {
     height: 5vh;
     align-content: center;
     background-color: #444444;
-    margin-top: -16px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0;
 }
 
 .main {
-    max-width: 100vw;
-    height: auto;
+    width: 100%;
 }
 
 .head {
-    height: 100vh;
+    /*margin-top:0;*/
+    height: 88vh;
     width: 100%;
     background-image: url(../IMG/Background/Head.jpg);
-    background-position: center;
+    /*background-position-x: top;*/
     background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(2, 50% 50%);
-    /*grid-template-rows: 1;*/
+    background-repeat: no-repeat;
+    display:flex;
     align-items: center;
-    /*justify-items: center;*/
-    font-size: 50px;
-    column-gap: 0px;
+    justify-content: center;
 }
 
-.foto{ 
-    width: 450px;
-    height:480px;
-    justify-self: center;
-    }
 
 .head h1{
-    justify-self: flex-start;
+    /*margin:0;*/
     color: yellow;
+    font-size: 30px;
 }
 
 .aboutme {
@@ -104,7 +105,7 @@ html {
 }
 
 .article {
-    margin-top: 200px;
+    margin-top: 100px;
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: repeat(3, auto);
@@ -121,22 +122,21 @@ html {
     grid-column-gap: space-between;
     height: 400px;
     width: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     align-items: center;
     justify-items: center;
 }
 
 .card:nth-child(1) {
-    background-image: url(../IMG/Background/aboutme-1.jpg);
+    background:linear-gradient(#08080844, #494747bd), url(../IMG/Background/aboutme-1.jpg);
 }
 
 .card:nth-child(2) {
-    background-image: url(../IMG/Background/resumecover.jpg);
+    background:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/resumecover.jpg);
 }
 
 .card:nth-child(3) {
-    background-image: url(../IMG/Background/myprojects.jpg);
+    background-image:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/myprojects.jpg);
 }
 
 .logo {
@@ -147,9 +147,10 @@ html {
 
 .namelink {
     text-decoration: none;
-    color: #200357;
+    color: #fff8f8;
     font-size: 50px;
     justify-content: center;
+    letter-spacing: 5px;
 }
 
 .namelink:hover {
@@ -158,45 +159,503 @@ html {
     text-decoration: underline
 }
 
-.contacts {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../IMG/Background/contacts.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 50% 50%);
-    /*justify-items: center;*/
-    align-items: center;
-    grid-column-gap: 0px;
-}
-
-.contacts a {
-    color:white;
-    font-size: 75px;
-    letter-spacing: 5px;
-    justify-self: left;
-    text-decoration: none;
-}
-
-.contacts a:hover{
-    color: yellow;
-    transition: 3s ease-out;
-    text-decoration: underline;
-    -webkit-transition: 3s ease-out;
-    -moz-transition: 3s ease-out;
-    -ms-transition: 3s ease-out;
-    -o-transition: 3s ease-out;
-}
-
-
-.img{ 
-    width: 300px;
-    height:300px;
-    justify-self: center;
+@media (min-width:1005px) and (max-width:1499px){
+    html {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 16px;
+        
+        /*background-color: #444444;*/
+        /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*line-height: 1.5;*/
+        /*margin-top: -15px;*/
+        /*height: 100vh;*/
+        /*justify-content: center;*/
     }
+    
+    .body {
+        width: 100%;
+        
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        background-color: #444444;
+    }
+    
+    .nav {
+        display: grid;
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(3, 180px);
+        grid-column-gap: 5px;
+        width: 550px;
+        height: 12vh;
+        align-items: center;
+    }
+    
+    .nav .navlink {
+        color: rgb(255, 251, 251);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 150px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    
+    .nav .navlink:hover {
+        color: red;
+        transition: 2s ease-out;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 5vh;
+        align-content: center;
+        background-color: #444444;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer p{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main {
+        width: 100%;
+        
+    }
+    
+    .head {
+        height: 88vh;
+        width: 100%;
+        background-image: url(../IMG/Background/Head.jpg);
+        background-position: unset;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        text-align:center ;
+        text-justify:center;
+        font-size: 30px;
+        
+    }
+    
+    
+    .head h1{
+        color: yellow;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .aboutme {
+        display: block;
+        height: auto;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .amh1 {
+        text-align: center;
+        font-size: 100px;
+        letter-spacing: 15px;
+    }
+    
+    .article {
+        margin-top: 50px;
+        display: grid;
+        grid-template-rows: repeat(2,420px);
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: space-around;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: repeat(2, 60% 40%);
+        grid-template-columns: 1;
+        grid-column-gap: space-between;
+        height: 400px;
+        width: 500px;
+        
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .card:nth-child(1) {
+        background:linear-gradient(#08080844, #494747bd), url(../IMG/Background/aboutme-1.jpg);
+    }
+    
+    .card:nth-child(2) {
+        background:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/resumecover.jpg);
+    }
+    
+    .card:nth-child(3) {
+        background-image:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/myprojects.jpg);
+    }
+    
+    .logo {
+        padding-top: 25px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .namelink {
+        text-decoration: none;
+        color: #fff8f8;
+        font-size: 50px;
+        justify-content: center;
+        letter-spacing: 5px;
+    }
+    
+    .namelink:hover {
+        color: yellow;
+        transition: 1s ease-out;
+        text-decoration: underline
+    }
+    
+}
 
+@media (min-width:700px) and (max-width:1008px){
+    html {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 16px;
+        
+        /*background-color: #444444;*/
+        /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*line-height: 1.5;*/
+        /*margin-top: -15px;*/
+        /*height: 100vh;*/
+        /*justify-content: center;*/
+    }
+    
+    .body {
+        width: 100%;
+        
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        background-color: #444444;
+    }
+    
+    .nav {
+        display: grid;
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(3, 180px);
+        grid-column-gap: 5px;
+        width: 550px;
+        height: 12vh;
+        align-items: center;
+    }
+    
+    .nav .navlink {
+        color: rgb(255, 251, 251);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 150px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    
+    .nav .navlink:hover {
+        color: red;
+        transition: 2s ease-out;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 5vh;
+        align-content: center;
+        background-color: #444444;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer p{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main {
+        width: 100%;
+        
+    }
+    
+    .head {
+        height: 88vh;
+        width: 100%;
+        background-image: url(../IMG/Background/Head.jpg);
+        background-position: unset;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        text-align:center ;
+        text-justify:center;
+        font-size: 30px;
+        
+    }
+    
+    
+    .head h1{
+        color: yellow;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .aboutme {
+        display: block;
+        height: auto;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .amh1 {
+        text-align: center;
+        font-size: 100px;
+        letter-spacing: 15px;
+    }
+    
+    .article {
+        /*margin-top: 200px;*/
+        display: grid;
+        grid-template-rows:repeat(3,450px);
+        grid-template-columns: repeat(1,450px);
+        grid-column-gap: space-between;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: repeat(2, 60% 40%);
+        grid-template-columns: 1;
+        /*grid-column-gap: space-between;*/
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .card:nth-child(1) {
+        background:linear-gradient(#08080844, #494747bd), url(../IMG/Background/aboutme-1.jpg);
+    }
+    
+    .card:nth-child(2) {
+        background:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/resumecover.jpg);
+    }
+    
+    .card:nth-child(3) {
+        background-image:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/myprojects.jpg);
+    }
+    
+    .logo {
+        padding-top: 25px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .namelink {
+        text-decoration: none;
+        color: #fff8f8;
+        font-size: 40px;
+        justify-content: center;
+        letter-spacing: 5px;
+    }
+    
+    .namelink:hover {
+        color: yellow;
+        transition: 1s ease-out;
+        text-decoration: underline
+    }
+    
+}
+
+@media (max-width:700px){
+    html {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 16px;
+        
+        /*background-color: #444444;*/
+        /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*line-height: 1.5;*/
+        /*margin-top: -15px;*/
+        /*height: 100vh;*/
+        /*justify-content: center;*/
+    }
+    
+    .body {
+        width: 100%;
+        
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        background-color: #444444;
+    }
+    
+    .nav {
+        display: grid;
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(3, 180px);
+        grid-column-gap: 5px;
+        width: 550px;
+        height: 12vh;
+        align-items: center;
+    }
+    
+    .nav .navlink {
+        color: rgb(255, 251, 251);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 150px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    
+    .nav .navlink:hover {
+        color: red;
+        transition: 2s ease-out;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 5vh;
+        align-content: center;
+        background-color: #444444;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer p{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main {
+        width: 100%;
+        
+    }
+    
+    .head {
+        height: 88vh;
+        width: 100%;
+        background-image: url(../IMG/Background/Head.jpg);
+        background-position: unset;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        text-align:center ;
+        text-justify:center;
+        font-size: 30px;
+        
+    }
+    
+    
+    .head h1{
+        color: yellow;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .aboutme {
+        display: block;
+        height: auto;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .amh1 {
+        text-align: center;
+        font-size: 70px;
+        letter-spacing: 15px;
+    }
+    
+    .article {
+        /*margin-top: 200px;*/
+        display: grid;
+        grid-template-rows:repeat(3,450px);
+        grid-template-columns: repeat(1,450px);
+        grid-column-gap: space-between;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: repeat(2, 60% 40%);
+        grid-template-columns: 1;
+        /*grid-column-gap: space-between;*/
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .card:nth-child(1) {
+        background:linear-gradient(#08080844, #494747bd), url(../IMG/Background/aboutme-1.jpg);
+    }
+    
+    .card:nth-child(2) {
+        background:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/resumecover.jpg);
+    }
+    
+    .card:nth-child(3) {
+        background-image:linear-gradient( #49474715, #000000ec ), url(../IMG/Background/myprojects.jpg);
+    }
+    
+    .logo {
+        padding-top: 25px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .namelink {
+        text-decoration: none;
+        color: #fff8f8;
+        font-size: 40px;
+        justify-content: center;
+        letter-spacing: 5px;
+    }
+    
+    .namelink:hover {
+        color: yellow;
+        transition: 1s ease-out;
+        text-decoration: underline
+    }
+    
+}
 
 
 

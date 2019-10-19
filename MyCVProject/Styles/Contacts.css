@@ -53,30 +53,27 @@ body {
 
 .footer {
     width: 100%;
-    height: 5vh;
+    height: 8vh;
     align-content: center;
     background-color: #444444;
-    margin-top: -16px;
+    /*margin-top: -16px;*/
 }
 
 
 body .headh1 {
     color: yellow;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 10px;
     justify-self: center;
     display: flex;
     width: auto;
     justify-content: center;
-    height:auto;;
-    /*background-image: url(../IMG/Background/contacts.png);
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    height:auto;
 }
 
 .contacts {
     width: 100%;
-    height: 69.3vh;
+    height: 67.2vh;
     background-image: url(../IMG/Background/contacts.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,23 +88,23 @@ body .headh1 {
 
 
 .div1{
-    height:600px;
+    height:500px;
     width: 600px;
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: 100px 250px;
     grid-template-rows: repeat(5, 100px);
-    align-items: center;
-    justify-items: center;
+    align-content: center;
+    justify-content: center;
     grid-row-gap: 5px;
 }
 
 div .img{
-    width: 80px;
-    height:80px;
+    width: 50px;
+    height:50px;
 }
 
 .div1 a{
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     text-decoration: none;
 }
@@ -119,10 +116,10 @@ div .img{
 }
 
 .div2{
-    height:600px;
+    height:500px;
     width: 600px;
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: 100px 250px;
     grid-template-rows: repeat(4, 100px);
     align-items: center;
     justify-items: center;
@@ -131,20 +128,20 @@ div .img{
 }
 
 .div2 p{
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
 .div3{
     display: flex;
     width:600px;
-    height:600px;
+    height:400px;
     align-items: top;
     justify-content: center;
-    font-size: 35px;
+    font-size: 25px;
 }
 
-@media (min-width:500px) and (max-width:1300px)
+@media (min-width:1201px) and (max-width:1700px)
 {
     html {
         font-family: "PT Sans Caption", sans-serif;
@@ -183,14 +180,14 @@ div .img{
     }
     
     .nav .navlink {
-        color: rgb(255, 251, 251);
+        color: #fffbfb;
         text-decoration: none;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 60px;
         width: 150px;
-        border: 3px solid white;
+        border: 3px solid #ffffff;
         border-radius: 50px;
     }
     
@@ -210,16 +207,169 @@ div .img{
     
     body .headh1 {
         color: yellow;
-        font-size: 60px;
+        font-size: 40px;
         letter-spacing: 10px;
         justify-self: center;
         display: flex;
         width: auto;
         justify-content: center;
         height:auto;;
-        /*background-image: url(../IMG/Background/contacts.png);
+        }
+
+
+    .contacts {
+        width: 100%;
+        height: auto;
+        background-image: url(../IMG/Background/contacts.png);
         background-repeat: no-repeat;
-        background-size: cover;*/
+        background-size: cover;
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(1, 550px);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        align-content: center;
+        justify-content: center;
+    }
+
+div{
+    margin-top:20px;
+}
+
+
+.div1{
+    height:500px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: repeat(5, 100px);
+    align-content: left;
+    justify-content: center;
+    grid-row-gap: 5px;
+}
+
+div .img{
+    width: 50px;
+    height:50px;
+}
+
+.div1 a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.div1 a:hover{
+    color: #ffff00;
+    transition: 1s ease-out;
+    text-decoration: underline;
+}
+
+.div2{
+    height:500px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 100px 250px;;
+    grid-template-rows: repeat(4, 100px);
+    align-content: left;
+    justify-content: center;
+    grid-row-gap: 5px;
+    
+}
+
+.div2 p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.div3{
+    /*grid-area:3;*/
+    display: flex;
+    width: 400px;
+    height:500px;
+    align-items: top;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+}
+
+
+@media (min-width:920px) and (max-width:1200px)
+{
+    html {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 16px;
+        /*background-color: #444444;*/
+        /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*line-height: 1.5;*/
+        /*margin-top: -15px;*/
+        /*height: 100vh;*/
+        /*justify-content: center;*/
+    }
+    
+    body {
+        width: auto;
+        background-image: url(../IMG/Background/contacts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        background-color: #444444;
+    }
+    
+    .nav {
+        display: grid;
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(3, 180px);
+        grid-column-gap: 5px;
+        width: 550px;
+        height: 99px;
+        align-items: center;
+    }
+    
+    .nav .navlink {
+        color: #fffbfb;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 150px;
+        border: 3px solid #ffffff;
+        border-radius: 50px;
+    }
+    
+    .nav .navlink:hover {
+        color: red;
+        transition: 2s ease-out;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 5vh;
+        align-content: center;
+        background-color: #444444;
+        margin-top: -16px;
+    }
+    
+    
+    body .headh1 {
+        color: yellow;
+        font-size: 40px;
+        letter-spacing: 10px;
+        justify-self: center;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height:auto;
     }
 
 
@@ -229,80 +379,224 @@ div .img{
         background-image: url(../IMG/Background/contacts.png);
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
+        color: #ffffff;
         display: grid;
-        /*grid-template-columns:1;
-        grid-template-rows: repeat(3, 500px);
-        justify-items: center;*/
-        grid-template-areas: "1"
-                             "2"
-                             "3";
-        grid-template-rows: 100%; 
-        align-items: center;
-        justify-items: center;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(2, 510px);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        /*align-content: center;*/
+        justify-content: center;
     }
 
 div{
     margin-top:50px;
 }
 .div1{
-    grid-area:1;
     height:500px;
-    width: 100vw;
+    width: 400px;
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: 100px 250px;;
     grid-template-rows: repeat(5, 100px);
-    align-items: center;
-    justify-items: center;
+    align-items: left;
+    justify-content: center;
     grid-row-gap: 5px;
 }
 
 div .img{
-    width: 80px;
-    height:80px;
+    width: 50px;
+    height:50px;
 }
 
 .div1 a{
-    font-size: 40px;
-    color: white;
+    font-size: 20px;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .div1 a:hover{
-    color: yellow;
+    color: #ffff00;
     transition: 1s ease-out;
     text-decoration: underline;
 }
 
 .div2{
-    grid-area:2;
     height:500px;
-    width: 100vw;
+    width: 400px;
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: 100px 250px;;
     grid-template-rows: repeat(4, 100px);
-    align-items: center;
-    justify-items: center;
+    align-content: left;
+    justify-content: center;
     grid-row-gap: 5px;
     
 }
 
 .div2 p{
-    font-size: 40px;
-    color: white;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 .div3{
-    grid-area:3;
     display: flex;
-    width: 100vw;
+    width: 400px;
     height:500px;
     align-items: top;
     justify-content: center;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 
+}
+
+@media (min-width:400px) and (max-width:919px)
+{
+    html {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 16px;
+        /*background-color: #444444;*/
+        /*!!!!!!!!!!!!!!!!!!!  НЕ УДАЛЯТЬ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*line-height: 1.5;*/
+        /*margin-top: -15px;*/
+        /*height: 100vh;*/
+        /*justify-content: center;*/
+    }
+    
+    body {
+        width: auto;
+        background-image: url(../IMG/Background/contacts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        background-color: #444444;
+    }
+    
+    .nav {
+        display: grid;
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(3, 180px);
+        grid-column-gap: 5px;
+        width: 550px;
+        height: 99px;
+        align-items: center;
+    }
+    
+    .nav .navlink {
+        color: #fffbfb;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 150px;
+        border: 3px solid #ffffff;
+        border-radius: 50px;
+    }
+    
+    .nav .navlink:hover {
+        color: red;
+        transition: 2s ease-out;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 5vh;
+        align-content: center;
+        background-color: #444444;
+        margin-top: -16px;
+    }
+    
+    
+    body .headh1 {
+        color: yellow;
+        font-size: 40px;
+        letter-spacing: 10px;
+        justify-self: center;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height:auto;
+    }
+
+
+    .contacts {
+        width: 100%;
+        height: auto;
+        background-image: url(../IMG/Background/contacts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(1, 450px);
+        grid-template-rows: repeat(3, 510px);
+        grid-column-gap: 50px;
+        /*grid-row-gap: 20px;*/
+        align-content: center;
+        justify-content: center;
+    }
+
+div{
+    margin-top:50px;
+}
+.div1{
+    height:500px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(5, 100px);
+    align-content: left;
+    justify-content: center;
+    grid-row-gap: 5px;
+}
+
+div .img{
+    width: 50px;
+    height:50px;
+}
+
+.div1 a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.div1 a:hover{
+    color: #ffff00;
+    transition: 1s ease-out;
+    text-decoration: underline;
+}
+
+.div2{
+    height:500px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 100px);
+    align-content: left;
+    justify-items: left;
+    grid-row-gap: 5px;
+    
+}
+
+.div2 p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.div3{
+    display: flex;
+    width: 400px;
+    height:500px;
+    align-items: top;
+    justify-content: left;
+    font-size: 20px;
+}
 
 
 }
